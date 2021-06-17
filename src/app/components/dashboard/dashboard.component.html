@@ -1,12 +1,17 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav class="sidenav-custom">
     <mat-nav-list>
-      <a mat-list-item [routerLink]="'/accounts'" class="list-item"> Accounts </a>
-      <a mat-list-item [routerLink]="'/create-account'"> Create Account </a>
-      <button mat-button class="menu-button">
-        <mat-icon>help</mat-icon>
-        <span>Help</span>
-      </button>
+      
+        <img src="../../../assets/images/plant.jpg" alt="plant image" class="plant-img">
+    <div style="padding-top: 20px;">
+      <a mat-list-item [routerLink]="'/landing'" class="list-item" (click)="onToggleClose()">
+        <mat-icon class="nav-icons">home</mat-icon> <span>Home</span>
+      </a>
+      <a mat-list-item [routerLink]="'/recom'" class="list-item" (click)="onToggleClose()">
+        <mat-icon class="nav-icons">bar_chart</mat-icon><span>Recommendation</span>
+      </a>
+    </div>
+    
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

@@ -5,6 +5,7 @@ import { RecommendationComponent } from './components/recommendation/recommendat
 
 
 const routes: Routes = [
+  {path: "", component:LandingPageComponent},
   {path: "landing", component:LandingPageComponent},
   { path: "recom", component: RecommendationComponent },
 ];
