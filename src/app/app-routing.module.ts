@@ -1,11 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {MatTabsModule} from '@angular/material/tabs';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { RecommendationComponent } from './components/recommendation/recommendation.component';
 
-const routes: Routes = [];
 
+const routes: Routes = [
+  {path: "landing", component:LandingPageComponent},
+  { path: "recom", component: RecommendationComponent },
+];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule,MatTabsModule]
+  exports: [RouterModule,]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+
+  
+}

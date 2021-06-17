@@ -5,18 +5,45 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MatCardModule } from '@angular/material/card';
+import { ChartsModule } from 'ng2-charts';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { MediaMatcher } from '@angular/cdk/layout';
+import { FormsModule } from '@angular/forms';
 
+
+import {
+  MatToolbarModule,
+  MatSidenavModule,
+  MatButtonModule,
+  MatIconModule,
+  MatListModule
+} from '@angular/material';
+import { RecommendationComponent } from './components/recommendation/recommendation.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent, HeaderComponent, SideNavComponent, RecommendationComponent, LandingPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    ChartsModule, MatTabsModule,
+    MatTableModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [MediaMatcher],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

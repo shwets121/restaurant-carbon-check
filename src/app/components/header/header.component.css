@@ -1,0 +1,19 @@
+
+.gen-hack-text{
+    font-size: x-large;
+
+    }
+.nav-li-item{
+    background-color:gray;
+    margin-left: 10px;
+    padding: 0 40px;
+}
+
+.row-welcome-text{
+padding-bottom: 5%;
+
+}
+
+.navbar-custom{
+padding: 0px;
+}
